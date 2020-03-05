@@ -1,0 +1,20 @@
+$dark-shade: #1f2041;
+$dark-shade75: rgba(#1f2041, .75);
+$dark-shade50: rgba(#1f2041, .5);
+$dark-shade25: rgba(#1f2041, .25);
+$dark-shade05: rgba(#1f2041, .05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+
+%main-font {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+%main-font_bold {
+    @extend %main-font;
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+@import '../../../../../styles/global';
+
+.palette-item{
+    display: flex;
+    width: 270px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+}
+
+.palette-item__box{
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+}
+
+.palette-item__box{
+    &_dark100{
+        background-color: $dark-shade;
+    }
+    &_dark75{
+        background-color: $dark-shade75;
+    }
+    &_dark50{
+        background-color: $dark-shade50;
+    }
+    &_dark25{
+        background-color: $dark-shade25;
+    }
+    &_dark05{
+        background: $dark-shade05;
+    }
+    &_green{
+        background-color: $green;
+    }
+    &_purple{
+        background-color: $purple;
+    }
+}
+.palette-item__name {
+    @extend %main-font_bold;
+    margin: 0 auto;
+    
+}
+.palette-item__digit {
+    @extend %main-font;
+
+}

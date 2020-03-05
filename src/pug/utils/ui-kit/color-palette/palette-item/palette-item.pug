@@ -1,0 +1,8 @@
+mixin palette-item(name, color, mod)
+    
+    .palette-item
+        div(class=`palette-item__box palette-item__box${mod}`)
+        .text-container
+            p.palette-item__name= name
+                br
+                span.palette-item__digit= color
