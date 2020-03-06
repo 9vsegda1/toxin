@@ -1,6 +1,6 @@
-mixin palette-item(name, color, mod)
+mixin palette-item(name, color, mod, className='')
     
-    .palette-item
+    div(class=`palette-item ${className}`)
         div(class=`palette-item__box palette-item__box${mod}`)
         .text-container
             p.palette-item__name= name

@@ -1,5 +1,5 @@
 include ../utils/mixins
-include ../utils/ui-kit/color-palette/color-palette
+
 
 block variables
 
@@ -11,9 +11,9 @@ html(lang="en")
         title #{title}
         meta(name="desription", content=desription)
         link(href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet")
 
     body(class=pageClass) 
-        .wrapper
-            .content-wrapper
-                block content
-            
+        .container
+            block content
+                    

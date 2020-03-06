@@ -3,8 +3,7 @@
 .palette-item{
     display: flex;
     width: 270px;
-    height: 70px;
-    margin-bottom: 20px;
+    height: 70px;    
 }
 
 .text-container{
@@ -43,11 +42,10 @@
     }
 }
 .palette-item__name {
-    @extend %main-font_bold;
+    @extend %item-title;
     margin: 0 auto;
     
 }
 .palette-item__digit {
-    @extend %main-font;
-
+    @extend %quicksand19slim;
 }

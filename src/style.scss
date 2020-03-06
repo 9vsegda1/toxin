@@ -1,6 +1,5 @@
 @import './styles/global';
 @import './pug/utils/ui-kit/color-palette/palette-item/palette-item.scss';
-
-.mainh {
-    color: $dark-shade25;
-}
+@import './pug/utils/ui-kit/color-palette/color-palette.scss';
+@import './styles/fonts';
+@import './pug/utils/ui-kit/fonts.scss';

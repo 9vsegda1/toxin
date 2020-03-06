@@ -1,0 +1,38 @@
+@import './global';
+%sub-title{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: $dark-shade;
+}
+
+
+%cta-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: $dark-shade;
+}
+
+%mainfont{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: $dark-shade75;
+}
+
+%quicksand19slim{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    color: $dark-shade;
+}
+%item-title {
+    @extend %quicksand19slim;
+    font-weight: bold;
+    color: $dark-shade;
+}

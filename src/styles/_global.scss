@@ -7,14 +7,30 @@ $purple: #BC9CFF;
 $green: #6FCF97;
 
 
-%main-font {
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-}
 
-%main-font_bold {
-    @extend %main-font;
-    font-weight: bold;
+
+html{
+    box-sizing: border-box;
+}
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+}
+body{
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-width: 1920px;
+    margin: 0 auto;
 }

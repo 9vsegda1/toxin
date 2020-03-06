@@ -1,0 +1,13 @@
+@import "../../../styles/fonts";
+.sub-title{
+    @extend %item-title;
+}
+.item-title{
+    @extend %item-title;
+}
+.cta-text{
+    @extend %cta-text;
+}
+.usual-text{
+    @extend %mainfont;
+}
