@@ -13,6 +13,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
+    line-height: 15px;
     color: $dark-shade;
 }
 
@@ -33,6 +34,7 @@
 }
 %item-title {
     @extend %quicksand19slim;
+    font-size: 24px;
     font-weight: bold;
     color: $dark-shade;
 }

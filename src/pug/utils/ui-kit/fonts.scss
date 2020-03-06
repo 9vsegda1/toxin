@@ -1,13 +1,69 @@
 @import "../../../styles/fonts";
+.fonts-wrapper {
+    width: 400px;
+}
 .sub-title{
+    margin-bottom: 50px;
+    position: relative;
     @extend %item-title;
+    &:before{
+        content: 'H1';
+        position: absolute;
+        top: 0;
+        left: -59px;
+        bottom: -2px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: $dark-shade25;
+    }
 }
 .item-title{
+    margin-bottom: 50px;
     @extend %item-title;
+    position: relative;
+    &:before{
+        content: 'H2';
+        position: absolute;
+        top: 0;
+        left: -54px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        color: $dark-shade25;
+    }
 }
 .cta-text{
+    margin-bottom: 50px;
     @extend %cta-text;
+    position: relative;
+    &:before{
+        content: 'H3'; 
+        position: absolute;
+        left:-45px;    
+        top: 0;   
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: $dark-shade25;
+    }
 }
 .usual-text{
+    margin-bottom: 50px;
     @extend %mainfont;
+    position: relative;
+    &:before{
+        position: absolute;
+        top: 0;
+        left: -67px;
+        content: 'Body';
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: $dark-shade25;
+    }
 }

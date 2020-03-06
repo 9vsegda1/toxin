@@ -1,5 +1,15 @@
 @import './styles/global';
-@import './pug/utils/ui-kit/color-palette/palette-item/palette-item.scss';
-@import './pug/utils/ui-kit/color-palette/color-palette.scss';
 @import './styles/fonts';
 @import './pug/utils/ui-kit/fonts.scss';
+
+
+@import './pug/layout/main.scss';
+
+
+@import './pug/utils/ui-kit/color-palette/palette-item/palette-item.scss';
+@import './pug/utils/ui-kit/color-palette/color-palette.scss';
+@import './pug/pages/colors-types/colors-types.scss';
+
+@import './pug/pages/input.scss';
+@import './pug/pages/uikit-form.scss';
+

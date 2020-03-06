@@ -1,0 +1,38 @@
+.input-container{
+    position: relative;
+}
+
+.input_default {
+    width: 320px;
+    height: 44px;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 15px;
+    @extend %mainfont;
+    color: $dark-shade25;
+    &:hover, &:focus {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        color: $dark-shade75;
+    }
+}
+
+.input__label {
+    position: absolute;
+    top: -20px;
+    left: 0;  
+    @extend %cta-text;
+    
+}
+
+
+
+
+
+
+
+.select-default{
+    width: 320px;
+    height: 44px;
+}
