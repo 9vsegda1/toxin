@@ -1,31 +1,53 @@
 extends ../layout/main  
 
 mixin input(args)
-    .input-container
-        input.input_default(
-            type=args.type ? args.type : 'text'
-            name=args.name ? args.name : null
-            value=args.value ? args.value : null
-            placeholder=args.placeholder ? args.placeholder : null
-            class=attributes.class
-            id=attributes.id ? attributes.id : null
-        )
-        label.input__label= args.labelText ? args.labelText : ''
+  .input-container
+    input.input_default(
+      type=args.type ? args.type : 'text'
+      name=args.name ? args.name : null
+      value=args.value ? args.value : null
+      placeholder=args.placeholder ? args.placeholder : null
+      class=attributes.class
+      id=attributes.id ? attributes.id : null
+    )
+    label.input__label= args.labelText ? args.labelText : ''
 
 block content
-    .page-content
-        form.uikit-form(action="")
-            +input({
-                name: "someName",
-                placeholder: "someplaceholer",
-                labelText: "labelText"
-            })
-            
+  .page-content
+    form.uikit-form(action="")
+      +input({
+        name: "someName",
+        placeholder: "someplaceholer",
+        labelText: "labelText"
+      })
+      
 
-                
-            .select-container
-                select#ewq.select-default(name="qwe" placeholder="qwe")
-                    option(value="some1") some3
-                    option(value="some2") some2
-                    option(value="some3") some1
-                    option(value="some4") some4
+        
+      .select-container
+        .select
+          .select__header
+            span.select__current Сколько гостей
+            .select__icon  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 18 18"><path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"/></svg> 
+          .select__body(data-adult='0', data-child='0', data-baby='0')
+            .select__item
+              span.item__name взрослые
+              .select__change.panel
+                .panel__plus.plus-adult.panel-buttons
+                span.panel__count.count-adult 0
+                .panel__minus.minus-adult.panel-buttons(disabled='true')
+            .select__item
+              span.item__name дети
+              .select__change.panel
+                .panel__plus.plus-child.panel-buttons
+                span.panel__count.count-child 0
+                .panel__minus.minus-child.panel-buttons(disabled='true')
+            .select__item
+              span.item__name младенцы
+              .select__change.panel
+                .panel__plus.plus-baby.panel-buttons
+                span.panel__count.count-baby 0
+                .panel__minus.minus-baby.panel-buttons(disabled='true')
+            .select__buttons
+              .select__clear(disabled='') очистить
+              .select__accept применить
+        

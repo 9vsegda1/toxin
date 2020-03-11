@@ -1,0 +1,212 @@
+.select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    margin: 0 auto;
+    position: relative;    
+    width: 320px;
+    cursor: default;
+
+    @extend %mainfont;
+    color: $dark-shade75;
+}
+
+.select.is-active .select__header{    
+    border-radius: 2px 2px 0 0;
+    border: 1px solid $dark-shade50;
+    
+    .select__icon {
+        fill: $dark-shade75;
+    }
+}
+
+.select.is-active .select__body {
+    display: block;
+    transform: translateY(0);
+   
+}
+
+.select__header {
+    box-sizing: border-box;
+    width: 320px;
+    height: 44px;
+    border: 1px solid;
+
+    border-color: $dark-shade25;
+
+    -webkit-transition: border-color .5s linear 0s;
+	-moz-transition: border-color .5s linear 0s;
+	-o-transition: border-color .5s linear 0s;
+	transition: border-color .5s linear 0s;
+
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+}
+
+.select__header:hover {
+    border: 1px solid $dark-shade50;
+    .select__icon {
+        fill: $dark-shade75;
+    }
+}
+
+
+.select.is-active .select__header{
+    border-radius: 4px 4px 0 0;
+}
+
+.select__current {    
+    margin: 0;
+    height: 44px;
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 44px;    
+}
+
+.select__icon {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 40px;
+    margin-left: auto;
+    text-align: center;
+    width: 40px;
+    fill: $dark-shade50;
+}
+
+.select__body {    
+    width: 320px;
+    height: 160px;
+    border: 1px solid $dark-shade50;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    border-top: 0;
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 100%;
+
+    transform: translateY(-100px);
+
+    -webkit-transition: all 1s ease-in-out 0s;
+	-moz-transition: all 1s ease-in-out 0s;
+	-o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+}
+
+.select__item {
+    display: flex;    
+    height: 30px;
+    line-height: 30px;
+    margin-top: 7px;
+
+    @extend %cta-text;
+}
+.item__name {
+    font-size: 12px;
+
+    flex-shrink: 0;
+    padding-left: 15px;
+    width: 83px;
+    margin-right: 123px;
+    text-transform: uppercase;
+}
+.panel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+.panel__count{
+    width: 8px;
+}
+.panel-buttons {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $dark-shade25;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+
+    -webkit-transition: border-color .3s linear 0s;
+	-moz-transition: border-color .3s linear 0s;
+	-o-transition: border-color .3s linear 0s;
+	transition: border-color .3s linear 0s;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.panel-buttons[disabled="true"] {
+    border: 1px solid $dark-shade05;
+    cursor: default;
+}
+
+.panel-buttons[disabled="true"]::before {
+    color: $dark-shade05;
+}
+
+.panel__plus::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-align: center;
+    line-height: 0;
+    content: '+';
+    top: 14px;
+    left: 9px;
+    z-index: -100;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: $dark-shade50;
+}
+
+
+
+.panel__minus::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-align: center;
+    line-height: 0;
+    content: '-';
+    top: 13px;
+    left: 11px;
+    z-index: -100;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: $dark-shade50;
+}
+
+.select__buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 7px 13px 14px;
+    @extend %cta-text;
+    text-transform: uppercase;
+}
+.select__clear {
+    cursor: pointer;
+    color: $dark-shade50;
+}
+.select__accept {
+    cursor: pointer;
+    color: $purple;
+}
+.select__clear[disabled]{
+    cursor: default;
+    opacity: 0;
+    z-index: -100;
+}
