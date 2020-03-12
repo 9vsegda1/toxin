@@ -23,6 +23,8 @@
 
 .select.is-active .select__body {
     display: block;
+    z-index: 100;
+    background-color: #fff;
     transform: translateY(0);
    
 }
@@ -89,7 +91,7 @@
     left: 0;
     right: 0;
     top: 100%;
-
+    
     transform: translateY(-100px);
 
     -webkit-transition: all 1s ease-in-out 0s;
@@ -103,6 +105,7 @@
     height: 30px;
     line-height: 30px;
     margin-top: 7px;
+    justify-content: space-between;
 
     @extend %cta-text;
 }
@@ -111,8 +114,8 @@
 
     flex-shrink: 0;
     padding-left: 15px;
-    width: 83px;
-    margin-right: 123px;
+    width: 148px;
+    
     text-transform: uppercase;
 }
 .panel {
@@ -222,4 +225,21 @@
     cursor: default;
     opacity: 0;
     z-index: -100;
+}
+
+
+
+
+
+// ================================== _rooms
+.select_rooms {
+    width: 266px;
+    margin: 0;
+}
+.select__header_rooms{
+    width: 266px;
+}
+.select__body_rooms{
+    width: 266px;
+    height: 120px;
 }

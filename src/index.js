@@ -1,4 +1,4 @@
 import './style.scss'
-import './pug/pages/dropdown'
+import './pug/includes/components/dropdownSelect/dropdown'
 
 console.log('hello')

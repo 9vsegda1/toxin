@@ -1,0 +1,7 @@
+mixin select__item(name, dataName)
+    .select__item
+        span.item__name=name
+        .select__change.panel
+            div(class='plus-'+dataName).panel__plus.panel-buttons
+            span(class='count-'+dataName).panel__count 0
+            div(class='minus-'+dataName disabled='true').panel__minus.panel-buttons

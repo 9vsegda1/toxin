@@ -1,0 +1,14 @@
+include ../../elements/select__item/select__item
+mixin dropDownRooms(type)
+    .select.select_rooms(type=type)
+        .select__header.select__header_rooms
+            span.select__current.select__current_rooms Ваши удобства
+            .select__icon  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 18 18"><path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"/></svg> 
+        .select__body.select__body_rooms
+
+            +select__item('спальни', 'room')
+            +select__item('кровати', 'bed')
+            +select__item('ванные комнаты', 'bath')
+
+
+            
