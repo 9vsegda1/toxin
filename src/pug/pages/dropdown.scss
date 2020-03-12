@@ -143,6 +143,19 @@
     margin-left: 10px;
 }
 
+.panel-buttons:hover {
+    border-top-color: $dark-shade75;
+    border-right-color: $dark-shade75;
+    border-bottom-color: $dark-shade75;
+    border-left-color: $dark-shade75;
+    
+    transition: 
+        border-top-color 0.15s linear,
+        border-right-color 0.15s linear 0.10s,
+        border-bottom-color 0.15s linear 0.20s,
+        border-left-color 0.15s linear 0.30s;
+}
+
 .panel-buttons[disabled="true"] {
     border: 1px solid $dark-shade05;
     cursor: default;
